@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Game</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="settings-btn" id="settings-btn">
+      <i class="fas fa-cog"></i>
+    </button>
+
+    <div class="settings" id="settings">
+      <form action="" class="settings-form">
+        <div>
+          <label for="difficulty">Difficulty</label>
+          <select name="" id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+      </form>
+    </div>
+
+    <div class="container">
+      <h2>Speed Typer</h2>
+      <small>Type the following:</small>
+
+      <h1 id="word"></h1>
+
+      <input
+        type="text"
+        id="text"
+        placeholder="Type the word here.."
+        autocomplete="off"
+        autofocus
+      />
+
+      <p class="time-container">Time left:<span id="time">20s</span></p>
+      <p class="score-container">Score:<span id="score">0</span></p>
+      <p class="end-game-container" id="end-game-container"><span></span></p>
+    </div>
+    <br />
+    <script src="script.js" defer></script>
+  </body>
+</html>
